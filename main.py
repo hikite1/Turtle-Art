@@ -4,10 +4,12 @@
 import turtle
 import random
 from turtle import *
+screen = Screen()
 
 turtle.shape('turtle')
 turtle.speed(0)
 turtle.width(5)
+turtle.colormode(255)
 
 def back(len):
   turtle.penup()
@@ -23,7 +25,7 @@ def polygon(num, size):
     r = random.randint(0, 255)
     g = random.randint(0, 255)
     b = random.randint(0, 255)
-    turtle.pencolor(r,g,b)
+    turtle.pencolor(r, g, b)
     turtle.forward(size)
     turtle.left(360/num)
     
@@ -43,3 +45,5 @@ turtle.penup()
 turtle.goto(-30,20)
 turtle.pendown()
 spiral(50,90)
+
+turtle.exitonclick()
