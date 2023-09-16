@@ -8,7 +8,7 @@ from turtle import *
 turtle = Turtle()
 wn = Screen() #Screen Object
 wn.bgcolor("black") #Screen Bg color
-wn.title("Fractal Tree Pattern")
+wn.title("Recursive Fractal Tree Art")
 turtle.speed(0)#setting the speed of the turtle
 turtle.shape('turtle')
 colormode(255)
